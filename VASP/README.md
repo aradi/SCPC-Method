@@ -36,3 +36,38 @@
       VCRYCUT = 0.1 ; the damping region is given in crystaline coordinate and it is symmetric
       VCRZCUT = 0.1 ; you don't need to set all the sides, only the closest to the origin.
 
+2. Recommendations
+
+   2.1 Only single point calculation. The SCPC by the moment cannot be used for ions/cell optimization. 
+   You can turn on the SCPC method but there won't have any effect to the forces. 
+
+   2.2 The unit cell must be orthogonal to be used with SCPC method.
+
+   2.3 For 2D materials and slabs, the vacuum direction should be set on the Z-direction. 
+
+   2.4 The SCPC depends on the grid quality; hence, you should consider to use PREC = Accurate 
+   or increase in 25%-35% the default ENCUT and ENAUG should be set to twice of ENCUT value. 
+
+   2.5 Do not use LREAL = Auto, only in very large cases. 
+
+   2.6 To define the slab interfaces boundaries you can consider 1-1.5A bellow and above the 
+   frontier ion coordinates in the Z-direction. 
+
+   2.7 Reasonable sizes for the material should be used in association to the SCPC method. 
+   For 3D systems, try to use lattice larger than 15-20 Angstrom. For 2D/Slabs, the in-plane 
+   lateral size should be larger than 15-20 Angstrom and the vacuum size should be 3-4 times 
+   the thickness or the in-plane lateral sides. 
+ 
+   2.8 You can use the uncorrected charged WAVECAR and CHGCAR as an initial guess to the SCPC method 
+   when you have a localized defect. However, for negative defect (excess of electron) this is 
+   not a good choice when you are modeling a 2D/SLAB material. For negative defect, you should start 
+   SCPC after few SCF iterations INVCOR = 8, since the beginning. 
+
+   2.9 You can also start the SCPC with a partial converged uncorreted charged system. You can run 
+   the charged system with EDIFF = 1.0 or EDIFF = 0.1 then use the WAVECAR and CHGCAR to start SCPC
+   method.     
+
+   2.10 For 2D/SLAB negative defect with charge spilling and/or large potential bending in the vacuum 
+   direction, you have to use the neutral defect as reference. The use of the pristine system as 
+   reference didn't properly correct the charge spilling / potential bending. 
+
