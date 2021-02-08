@@ -36,6 +36,25 @@
       VCRYCUT = 0.1 ; the damping region is given in crystaline coordinate and it is symmetric
       VCRZCUT = 0.1 ; you don't need to set all the sides, only the closest to the origin.
 
+  1.2 VASP-6.2
+
+    For VASP-6.2 the input keywords are following the new rules in the INCAR files. 
+    The example for a slab is given bellow :
+
+      SCPC {
+        USE   = T    ; turning on the SCPC method
+        IN    = 1    ; starting on the first cycles
+        QTOT  = 1.00 ; format defct charge 
+        ZLOW  = 0.22 ; lower interface boundary
+        ZHIG  = 0.53 ; upper interface boundary
+        DIEL  = 2.46 ; macroscopic dielectric
+        BROAD = 0.40 ; broadening for the interface
+        PRTX  = T    ; printing the averages on the X direction 
+        RXCUT = 0.1  ; damping ragion on X direction for the model charge
+        RYCUT = 0.1  ;
+     }
+
+
 2. Recommendations
 
    2.1 Only single point calculation. The SCPC, by the moment, cannot be used for ions/cell optimization. 
