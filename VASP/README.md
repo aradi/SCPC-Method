@@ -44,7 +44,7 @@
       SCPC {
         USE   = T    ; turning on the SCPC method
         IN    = 1    ; starting on the first cycles
-        QTOT  = 1.00 ; format defct charge 
+        QTOT  = 1.00 ; formal defect charge 
         ZLOW  = 0.22 ; lower interface boundary
         ZHIG  = 0.53 ; upper interface boundary
         DIEL  = 2.46 ; macroscopic dielectric
