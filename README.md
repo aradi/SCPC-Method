@@ -18,13 +18,19 @@
 
    1.1 For the main method
 
-       "Self-consistent potential correction for charged periodic systems"
-       M. Chagas da Silva, M. Lorke, B. Aradi, M. Farzalipour-Tabriz,
-       Th. Frauenheim, A. Rubio, D. Rocca, P. Deák
-       Materials Science (cond-mat.mtrl-sci) arXiv:2005.03378
-       May 7th 2020.
 
-       Link: https://arxiv.org/abs/2005.03378
+       Mauricio Chagas da Silva, Michael Lorke, Bálint Aradi, 
+       Meisam Farzalipour Tabriz, Thomas Frauenheim, 
+       Angel Rubio, Dario Rocca, and Peter Deák
+
+       "Self-Consistent Potential Correction for Charged Periodic Systems"
+
+       Phys. Rev. Lett. 126, 076401 – Published 19 February 2021
+
+       https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401
+
+       DOI: 10.1103/PhysRevLett.126.076401
+
 
    1.2 For the external libraries
 
