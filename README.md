@@ -63,6 +63,10 @@
         2.1.2 You must have an official VASP license and you must have a valid academic 
         e-mail.
 
+   2.2 VASP-6.2.0
+
+        It is already implemented in the official version of VASP-6.2.0.
+
   3 External libraries 
 
     3.1 To compile the SCPC method you should have installed the DL_MG and 
