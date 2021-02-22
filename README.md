@@ -27,7 +27,7 @@
 
        Phys. Rev. Lett. 126, 076401 – Published 19 February 2021
 
-       [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401)
+   [](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401)
 
        DOI: 10.1103/PhysRevLett.126.076401
 
