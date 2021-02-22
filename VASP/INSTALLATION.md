@@ -18,7 +18,7 @@
           installation
 
           #SCPC METHOD
-          LIBEXT     = /auto/tms7/chagasda1/opt/trunk/libext
+          LIBEXT     = /someplace/libext
           DLMGROOT   = $(LIBEXT)/dl_mg_2.0.2
           PSPFFTROOT = $(LIBEXT)/pspfft-1.0
           INCS      +=-I$(DLMGROOT)/lib
@@ -27,7 +27,9 @@
           LLIBS     +=-Wl,--start-group $(PSPFFTROOT)/lib/libpspfft.a -Wl,--end-group
           #SCPC METHOD
 
-
+      (b.1) For VASP-6.2.0, it is necessary to add -DSCPC to the CPP_OPTIONS in the
+            beginning of the makefile.include 
+         
     (c) you can compile your own version of vasp-scpc
 
         %make
