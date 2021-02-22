@@ -17,15 +17,15 @@
        -- edit the variables at makefile.include to point your own
           installation
 
-      #SCPC METHOD
-        LIBEXT     = /auto/tms7/chagasda1/opt/trunk/libext
-        DLMGROOT   = $(LIBEXT)/dl_mg_2.0.2
-        PSPFFTROOT = $(LIBEXT)/pspfft-1.0
-        INCS      +=-I$(DLMGROOT)/lib
-        INCS      +=-I$(PSPFFTROOT)/include
-        LLIBS     +=-Wl,--start-group $(DLMGROOT)/lib/libdlmg.a -Wl,--end-group
-        LLIBS     +=-Wl,--start-group $(PSPFFTROOT)/lib/libpspfft.a -Wl,--end-group
-      #SCPC METHOD
+          #SCPC METHOD
+          LIBEXT     = /auto/tms7/chagasda1/opt/trunk/libext
+          DLMGROOT   = $(LIBEXT)/dl_mg_2.0.2
+          PSPFFTROOT = $(LIBEXT)/pspfft-1.0
+          INCS      +=-I$(DLMGROOT)/lib
+          INCS      +=-I$(PSPFFTROOT)/include
+          LLIBS     +=-Wl,--start-group $(DLMGROOT)/lib/libdlmg.a -Wl,--end-group
+          LLIBS     +=-Wl,--start-group $(PSPFFTROOT)/lib/libpspfft.a -Wl,--end-group
+          #SCPC METHOD
 
 
     (c) you can compile your own version of vasp-scpc
