@@ -27,7 +27,7 @@
 
        Phys. Rev. Lett. 126, 076401 – Published 19 February 2021
 
-[PRL](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401)
+[https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401)
 
        DOI: 10.1103/PhysRevLett.126.076401
 
@@ -42,7 +42,7 @@
         Matt I. J. Probert, and Chris-Kriton Skylaris
         J. Chem. Theory Comput. 2018, 14, 3, 1412–1432
 
-        (https://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b01274)
+[https://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b01274](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b01274)
 
       1.2.2 Isolate Potential 
 
@@ -51,7 +51,7 @@
         Computer Physics Communications
         Volume 182, Issue 10, October 2011, Pages 2265-2275
 
-        (https://doi.org/10.1016/j.cpc.2011.05.014)
+[https://doi.org/10.1016/j.cpc.2011.05.014](https://doi.org/10.1016/j.cpc.2011.05.014)
 
   2 Getting the SCPC method
 
@@ -74,11 +74,11 @@
 
     3.2 For the DL_MG (version 2.1.4), please visit the website 
 
-        (https://bitbucket.org/dlmgteam/dl_mg_code_public/src/master/)
+[https://bitbucket.org/dlmgteam/dl_mg_code_public/src/master/](https://bitbucket.org/dlmgteam/dl_mg_code_public/src/master/)
 
     3.3 For the PSPFFT (1.0.1), please visit the website
 
-        (http://eagle.phys.utk.edu/pspfft/trac/)
+[http://eagle.phys.utk.edu/pspfft/trac/](http://eagle.phys.utk.edu/pspfft/trac/)
 
 
 
