@@ -7,5 +7,5 @@
   The parallelism of the bands is working fine; hence, the user can continue 
   using the NPAR keyword with SCPC at VASP. The authors thank Soungmin Bae 
   and Hannes Raebiger for their contribution on reporting the bug/issue 
-  with KPAR keyword with SCPC implemente in VASP.
+  with KPAR keyword with SCPC.
 
