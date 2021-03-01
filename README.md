@@ -29,9 +29,6 @@
 
 [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.076401)
 
-       DOI: 10.1103/PhysRevLett.126.076401
-
-
    1.2 For the external libraries
 
      1.2.1 Poisson Solver
