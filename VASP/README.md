@@ -57,6 +57,9 @@
 
 2. Recommendations
 
+   2.0 The charged defect position should be placed in the middle of the unit cell or most close to the 
+   center of the unit cell.  
+
    2.1 Only single point calculation. The SCPC, by the moment, cannot be used for ions/cell optimization. 
    You can turn on the SCPC method but there won't have any effect to the forces. 
 
