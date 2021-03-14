@@ -5,7 +5,7 @@
 
     DOVCOR  =  T  ; to turn on the method
 
-    INVCOR  =  10 ; the SCPC will be started on the INVCOR SCF cycle
+    INVCOR  =  1 ; the SCPC will be started on the INVCOR SCF cycle
 
     VCQTOT  = -1.0 ; formal defect charge
 
@@ -83,13 +83,17 @@
    2.8 You can use the uncorrected charged WAVECAR and CHGCAR as an initial guess to the SCPC method 
    when you have a localized defect. However, for negative defect (excess of electron) this is 
    not a good choice when you are modeling a 2D/SLAB material. For negative defect, you should start 
-   SCPC after few SCF iterations INVCOR = 8, since the beginning. 
+   SCPC after few SCF iterations INVCOR = 4-6 without a the WAVECAR/CHGCAR. 
 
    2.9 You can also start the SCPC with a partial converged uncorreted charged system. You can run 
-   the charged system with EDIFF = 1.0 or EDIFF = 0.1 then use the WAVECAR and CHGCAR to start SCPC
+   the charged system with EDIFF = 5.0 - 0.1 then use the WAVECAR and CHGCAR to start SCPC
    method.     
 
    2.10 For 2D/SLAB negative defect with charge spilling and/or large potential bending in the vacuum 
    direction, you have to use the neutral defect as reference. The use of the pristine system as 
    reference didn't properly correct the charge spilling / potential bending. 
+
+   2.11 The SCPC should be started since the first SCF step (INVCOR=1) or as soon as possible (INVCOR=3-8).
+   If you use a preconverged WAVECAR/CHGCAR from the uncorrected charged system, it is mandatory to use 
+   INVCOR=1.
 
