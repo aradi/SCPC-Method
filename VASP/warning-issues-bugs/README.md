@@ -11,6 +11,6 @@
   The vasp_ncl with SCPC is broken. By the moment, you cannot use 
   non-collinear magnetization. The authors thank to Jing Zhan and 
   prof. Dr. Qihang Liu from the Southern Univ. of Science and Technology 
-  Shenzhen. for their contribution on reporting the bug/issue with the 
+  of Shenzhen/China for their contribution on reporting the bug/issue with the 
   non-collinear version of SCPC.  
 
