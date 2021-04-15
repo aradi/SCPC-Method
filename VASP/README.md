@@ -15,8 +15,8 @@
     the interface position and broadening of the interface must be 
     given
 
-      VCZLOW  =  0.15 ; lower interface boundary in crystaline coordinates
-      VCZHIG  =  0.34 ; upper interface boundary in crystaline coordinates
+      VCZLOW  =  0.15 ; lower interface boundary in crystalline coordinates
+      VCZHIG  =  0.34 ; upper interface boundary in crystalline coordinates
       VCBROAD =  0.70 ; a broadening factor, usually 0.4 (ionic material) - 0.8 (covalent systems) 
 
     1.1.2 By the default the averaged dielectric profile, the rho-model and the corrective
@@ -29,11 +29,11 @@
 
     1.1.3 For very covalent system, like organic periodic systems (C-diamond),
     the rho-model can suffer with some numerical instability due to small charge 
-    spilling on the boundaries of the unit cell. We suggest to use a cutoff term
+    spilling on the boundaries of the unit cell. We suggest to use a cut-off term
     to damp the rho-model fluctuations on the unit cell boundaries. 
 
       VCRXCUT = 0.1 ; damping region of the rho-model [0-0.1] and [0.9-1.0] will be added in the X-direction 
-      VCRYCUT = 0.1 ; the damping region is given in crystaline coordinate and it is symmetric
+      VCRYCUT = 0.1 ; the damping region is given in crystalline coordinate and it is symmetric
       VCRZCUT = 0.1 ; you don't need to set all the sides, only the closest to the origin.
 
   1.2 VASP-6.2
@@ -50,7 +50,7 @@
         DIEL  = 2.46 ; macroscopic dielectric
         BROAD = 0.40 ; broadening for the interface
         PRTX  = T    ; printing the averages on the X direction 
-        RXCUT = 0.1  ; damping ragion on X direction for the model charge
+        RXCUT = 0.1  ; damping region on X direction for the model charge
         RYCUT = 0.1  ;
      }
 
@@ -58,7 +58,7 @@
 2. Recommendations
 
    2.0 The charged defect position should be placed in the middle of the unit cell or most close to the 
-   center of the unit cell.  
+   centre of the unit cell.  
 
    2.1 Only single point calculation. The SCPC, by the moment, cannot be used for ions/cell optimization. 
    You can turn on the SCPC method but there won't have any effect to the forces. 
@@ -76,16 +76,16 @@
    frontier ion coordinates in the Z-direction. 
 
    2.7 Reasonable sizes for the material should be used in association to the SCPC method. 
-   For 3D systems, try to use lattice larger than 15-20 Angstrom. For 2D/Slabs, the in-plane 
-   lateral size should be larger than 15-20 Angstrom and the vacuum size should be 3-4 times 
+   For 3D systems, try to use lattice larger than 15-20 Angstroms. For 2D/Slabs, the in-plane 
+   lateral size should be larger than 15-20 Angstroms and the vacuum size should be 3-4 times 
    the thickness or the in-plane lateral sides. 
  
    2.8 You can use the uncorrected charged WAVECAR and CHGCAR as an initial guess to the SCPC method 
    when you have a localized defect. However, for negative defect (excess of electron) this is 
-   not a good choice when you are modeling a 2D/SLAB material. For negative defect, you should start 
+   not a good choice when you are modelling a 2D/SLAB material. For negative defect, you should start 
    SCPC after few SCF iterations INVCOR = 4-6 without a the WAVECAR/CHGCAR. 
 
-   2.9 You can also start the SCPC with a partial converged uncorreted charged system. You can run 
+   2.9 You can also start the SCPC with a partial converged uncorrected charged system. You can run 
    the charged system with EDIFF = 5.0 - 0.1 then use the WAVECAR and CHGCAR to start SCPC
    method.     
 
@@ -94,7 +94,7 @@
    reference didn't properly correct the charge spilling / potential bending. 
 
    2.11 The SCPC should be started since the first SCF step (INVCOR=1) or as soon as possible (INVCOR=3-8).
-   If you use a preconverged WAVECAR/CHGCAR from the uncorrected charged system, it is mandatory to use 
+   If you use a pre converged WAVECAR/CHGCAR from the uncorrected charged system, it is mandatory to use 
    INVCOR=1.
 
    2.12. The potential alignment issue is only partially automatized in the present implementation. Two shifts are necessary. 
@@ -114,7 +114,7 @@
    potentials at core” in the OUTCAR file for atoms far from the defect.)
 
    2.13 The SCPC method is suitable for semi-conductors and insulator systems with localized and/or quite localized 
-   charged defects. The SCPC cannot applied to conductor like surfaces or bulk like metalic system because there is 
+   charged defects. The SCPC cannot applied to conductor like surfaces or bulk like metallic system because there is 
    no localized defects neither a macroscopic dielectric is defined (macroscopic dielectric is infinity on metallic 
    materials).  
 
