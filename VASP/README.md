@@ -113,10 +113,6 @@
    by the charge, should be manually added. (Note: the shift can be determined by averaging the “average (electrostatic) 
    potentials at core” in the OUTCAR file for atoms far from the defect.)
 
-   2.13 The SCPC method is suitable for semi-conductors and insulator systems with localized and/or quite localized 
-   charged defects. The SCPC cannot applied to conductor like surfaces or bulk like metallic system because there is 
-   no localized defects neither a macroscopic dielectric is defined (macroscopic dielectric is infinity on metallic 
-   materials).  
-
-
-
+   2.13 The SCPC method is suitable for semiconductor and / or insulating systems; the SCPC method should not 
+   be used in conductive systems such as metallic surfaces and metallic 3D-bulk. In metallic systems, the 
+   dielectric is, by definition, infinite and there are no localized charged defects on this type of systems.
