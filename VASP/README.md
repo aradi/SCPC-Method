@@ -97,3 +97,26 @@
    If you use a preconverged WAVECAR/CHGCAR from the uncorrected charged system, it is mandatory to use 
    INVCOR=1.
 
+   2.12. The potential alignment issue is only partially automatized in the present implementation. Two shifts are necessary. 
+   One of them arises from the fact that the solution of the Poisson equation with Dirichlet boundary 
+   conditions does not guarantee that the average of the resulting potential will have a zero average, 
+   as expected from a periodic potential, so a corresponding shift is applied. At the end of the results 
+   in the VCOROUT file, the values given as Potential Alignment X,Z,Y should be averaged, multiplied by 
+   the charge, and added manually to both the total energy of the charged defect and to its (defect) 
+   levels, to correct for this shift. The other shift is required to align with the pristine system. 
+   The energy scale of the KS levels are automatically aligned by SCPC to that of the reference system. 
+   If the latter is the pristine system, no further shift of the KS levels is necessary (beyond the one described above). 
+   If the reference system is the neutral defect, an additional shift is required (based on the difference of the 
+   average electrostatic potential far from the defect between the neutral defective and the pristine system). 
+   This shift has to be applied manually to the (defect) levels (in addition). The total energy of the charged system 
+   is not aligned at all by SCPC. The potential shift between the pristine and the charged defective system, multiplied 
+   by the charge, should be manually added. (Note: the shift can be determined by averaging the “average (electrostatic) 
+   potentials at core” in the OUTCAR file for atoms far from the defect.)
+
+   2.13 The SCPC method is suitable for semi-conductors and insulator systems with localized and/or quite localized 
+   charged defects. The SCPC cannot applied to conductor like surfaces or bulk like metalic system because there is 
+   no localized defects neither a macroscopic dielectric is defined (macroscopic dielectric is infinity on metallic 
+   materials).  
+
+
+
