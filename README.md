@@ -77,7 +77,6 @@ It is already implemented in the official version of VASP-6.2.0.
   [http://eagle.phys.utk.edu/pspfft/trac/](http://eagle.phys.utk.edu/pspfft/trac/)
 
 
-
 ## Recommendations/Notes
 
 * Please note that SCPC cam only provide meaningful results if delta_rho(r),
