@@ -1,0 +1,12 @@
+--- scpc.F.original	2021-05-26 10:39:38.000000000 +0200
++++ scpc.F.fix_damping	2021-05-26 13:50:00.000000000 +0200
+@@ -88,6 +88,9 @@
+          call process_incar(incar, 'SCPC/MGX', settings%mgx)
+          call process_incar(incar, 'SCPC/MGY', settings%mgy)
+          call process_incar(incar, 'SCPC/MGZ', settings%mgz)
++         call process_incar(incar, 'SCPC/RXCUT', settings%rxcut)
++         call process_incar(incar, 'SCPC/RYCUT', settings%rycut)
++         call process_incar(incar, 'SCPC/RZCUT', settings%rzcut)
+       end if
+    end subroutine scpc_reader
+ 
