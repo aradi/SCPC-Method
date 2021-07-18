@@ -11,7 +11,7 @@ to the latest revision (rev7) in which the modifications were made:
 
 (a) VASP-5.4.4 and VASP-6.2.0
 
-An importante updating into the routine which calculates the isolated potential is released to fix
+An important updating into the routine which calculates the isolated potential is released to fix
 the main behaviour and the numerical stability of the charged defects calculations for slabs/2D
 systems using the SCPC method.
 
