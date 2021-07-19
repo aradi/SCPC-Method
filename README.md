@@ -51,6 +51,8 @@
 
 ## Getting the SCPC method
 
+**Last version: rev7 (2021-07-19)**
+
 ### VASP-5.4.4
 
 * To obtain a copy of the method patch for VASP release 5.4.4, please contact
@@ -62,6 +64,8 @@
 ### VASP-6.2.0
 
 It is already implemented in the official version of VASP-6.2.0.
+
+**Note:** The version implemented in VASP is an older version of SCPCP probably contains a bug. A patch for the current SPCP is available on request.
 
 
 ### External libraries 
