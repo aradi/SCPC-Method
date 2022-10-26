@@ -1,6 +1,6 @@
 1. INSTALLATION
 
-    (a) preparation
+    (a) preparation vasp-5.4.4 (vasp-6 is already distributed with SCPC routine - scpc.F)
 
        %cd 5.4.4
        %git apply ../vasp-scpc.patch
@@ -12,7 +12,7 @@
 
        -- check the makefile.include to add the right path
           for the external libraries for the Poisson and Isolate potential
-          solver
+          solver. The user should install the external solver libraries previously. 
 
        -- edit the variables at makefile.include to point your own
           installation
