@@ -15,5 +15,5 @@
   non-collinear version of SCPC.
 
 * [ Dec.27.2024] SCPC is only working with ALGO=Normal (default). ALGO=Damped or
-  ALGA=All should be avoided.
+  ALGO=All should be avoided.
 
