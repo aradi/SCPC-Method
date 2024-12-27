@@ -12,5 +12,8 @@
   non-collinear magnetization. The authors thank to Jing Zhan and 
   prof. Dr. Qihang Liu from the Southern Univ. of Science and Technology 
   of Shenzhen/China for their contribution on reporting the bug/issue with the 
-  non-collinear version of SCPC.  
+  non-collinear version of SCPC.
+
+* [ Dec.27.2024] SCPC is only working with ALGO=Normal (default). ALGO=Damped or
+  ALGA=All should be avoided.
 
